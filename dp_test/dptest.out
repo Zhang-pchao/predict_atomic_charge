@@ -1,0 +1,28 @@
+WARNING:tensorflow:From /mypath/envs/deepmdkit_2.2.2/lib/python3.10/site-packages/tensorflow/python/compat/v2_compat.py:107: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:root:To get the best performance, it is recommended to adjust the number of threads by setting the environment variables OMP_NUM_THREADS, TF_INTRA_OP_PARALLELISM_THREADS, and TF_INTER_OP_PARALLELISM_THREADS. See https://deepmd.rtfd.io/parallelism/ for more information.
+WARNING:root:Environment variable KMP_BLOCKTIME is empty. Use the default value 0
+WARNING:root:Environment variable KMP_AFFINITY is empty. Use the default value granularity=fine,verbose,compact,1,0
+/mypath/envs/deepmdkit_2.2.2/lib/python3.10/importlib/__init__.py:169: UserWarning: The NumPy module was reloaded (imported a second time). This can in some cases result in small but subtle issues and is discouraged.
+  _bootstrap._exec(spec, module)
+WARNING:tensorflow:From /mypath/envs/deepmdkit_2.2.2/lib/python3.10/site-packages/deepmd/utils/batch_size.py:61: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+WARNING:tensorflow:From /mypath/envs/deepmdkit_2.2.2/lib/python3.10/site-packages/deepmd/utils/batch_size.py:61: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+DEEPMD INFO    # ---------------output of dp test--------------- 
+DEEPMD INFO    # testing system : /work/pzhang/Glycine/cp2k/M062X_QZV3P/charge_h2o/dp_dataset_charge/004
+DEEPMD INFO    Adjust batch size from 1024 to 2048
+DEEPMD INFO    Adjust batch size from 2048 to 4096
+DEEPMD INFO    Adjust batch size from 4096 to 8192
+DEEPMD INFO    Adjust batch size from 8192 to 16384
+DEEPMD INFO    # number of test data : 100 
+DEEPMD INFO    DOS MAE            : 2.722453e+04 Occupation/eV
+DEEPMD INFO    DOS RMSE           : 2.722454e+04 Occupation/eV
+DEEPMD INFO    DOS MAE/Natoms     : 1.564628e+02 Occupation/eV
+DEEPMD INFO    DOS RMSE/Natoms    : 1.564628e+02 Occupation/eV
+DEEPMD INFO    Atomic DOS MAE     : 2.972789e-03 Occupation/eV
+DEEPMD INFO    Atomic DOS RMSE    : 5.319105e-03 Occupation/eV
+DEEPMD INFO    # ----------------------------------------------- 

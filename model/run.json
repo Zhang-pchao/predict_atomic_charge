@@ -1,0 +1,64 @@
+{
+    "model": {
+      "type_map":           ["H","O"],      
+	  "descriptor": {
+        "type":             "se_atten",
+        "sel":              120,
+        "rcut_smth":        0.5,
+        "rcut":             6.0,
+        "neuron":           [25,50,100],
+        "resnet_dt":        false,
+        "axis_neuron":      12,
+        "attn":	            100,
+        "attn_layer":       2,
+        "attn_dotr":        true,
+        "attn_mask":        false,		
+		"seed":             202309
+      },
+	  "fitting_net" : {
+		"type": "dos",
+		"numb_dos": 1,
+		"neuron": [240,240,240],
+		"resnet_dt": true,
+		"numb_fparam": 0,
+		"seed": 202309
+	  },	  
+    },
+
+	"loss" : {
+		"type": "dos",
+		"start_pref_dos": 0.0,
+		"limit_pref_dos": 0.0,
+		"start_pref_cdf": 0.0,
+		"limit_pref_cdf": 0.0,
+		"start_pref_ados": 1.0,
+		"limit_pref_ados": 1.0,
+		"start_pref_acdf": 0.0,
+		"limit_pref_acdf": 0.0
+    },
+
+    "learning_rate": {
+        "type":              "exp",
+        "start_lr":          1e-03,
+	    "stop_lr":           1e-08
+    },
+
+    "training": {
+        "numb_steps":        1000000,
+		"seed":              202309,
+        "disp_file":         "lcurve.out",
+        "disp_freq":         1000,
+        "numb_test":         10,
+        "save_freq":         10000,
+        "save_ckpt":         "model.ckpt",
+        "disp_training":     true,
+        "time_training":     true,
+        "profiling":         false,
+        "profiling_file":    "timeline.json",
+		"training_data": {
+			"systems":	   ["/work/pzhang/Glycine/cp2k/M062X_QZV3P/charge_h2o/dp_dataset_charge/008"],
+			"batch_size":	"auto"
+		}
+    }
+}
+
