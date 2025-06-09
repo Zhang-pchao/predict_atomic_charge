@@ -21,7 +21,7 @@ If we want to predict the charge for a large system, it will be time-consuming t
    - Another way is to use the [ASE interface](https://github.com/AxelTG/BaH2/blob/main/dp_charges/bader_predict.py), which allows direct prediction of atomic charges from structure files.
 
 5. **More Information**  
-   - For additional details, refer to the [DOS model manual](https://docs.deepmodeling.com/projects/deepmd/en/master/model/train-fitting-dos.html), the [Bohrium Notebook](https://bohrium.dp.tech/notebooks/6641686247) and the [paper](https://doi.org/10.1021/acs.langmuir.4c05004).  
+   - For additional details, refer to the [DOS model manual](https://docs.deepmodeling.com/projects/deepmd/en/master/model/train-fitting-dos.html), the [Bohrium Notebook](https://bohrium.dp.tech/notebooks/6641686247) and the [Paper](https://doi.org/10.1021/acs.langmuir.4c05004).  
    - The charge model is a simplified case of the DOS model, where the charge model is one-dimensional.
 
 If you find this repository helpful, please consider citing the following paper:
