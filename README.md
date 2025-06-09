@@ -23,3 +23,17 @@ If we want to predict the charge for a large system, it will be time-consuming t
 5. **More Information**  
    - For additional details, refer to the [DOS model manual](https://docs.deepmodeling.com/projects/deepmd/en/master/model/train-fitting-dos.html), the [Bohrium Notebook](https://bohrium.dp.tech/notebooks/6641686247) and the [paper](https://doi.org/10.1021/acs.langmuir.4c05004).  
    - The charge model is a simplified case of the DOS model, where the charge model is one-dimensional.
+
+If you find this repository helpful, please consider citing the following paper:
+
+```bibtex
+@article{Zhang_Langmuir_2025_v41_p3675,
+  title        = {{Propensity of Water Self--Ions at Air(Oil)--Water Interfaces Revealed by Deep Potential Molecular Dynamics with Enhanced Sampling}},
+  author       = {Pengchao Zhang and Xuefei Xu},
+  year         = 2025,
+  journal      = {Langmuir},
+  volume       = 41,
+  number       = 5,
+  pages        = {3675--3683},
+  doi          = {10.1021/acs.langmuir.4c05004},
+}
